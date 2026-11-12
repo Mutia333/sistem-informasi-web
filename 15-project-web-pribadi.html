@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Catatan & Jurnal Pribadi</title>
+</head>
+<body>
+
+    <!-- Navigasi Utama -->
+    <nav>
+        <a href="#beranda">Beranda</a> |
+        <a href="#jurnal">Catatan Belajar</a> |
+        <a href="#rak-buku">Rak Bacaan</a> |
+        <a href="#media">Galeri & Audio</a> |
+        <a href="#buku-tamu">Buku Tamu</a>
+    </nav>
+
+    <hr>
+
+    <!-- Header & Perkenalan -->
+    <header id="beranda">
+        <h1>Ruang Digital Adiva</h1>
+        <p><em>Tempat menyimpan catatan kuliah, progres belajar koding, dan rekomendasi buku.</em></p>
+        <img src="https://via.placeholder.com/600x200" alt="Banner Ruang Digital" width="600" height="200">
+    </header>
+
+    <hr>
+
+    <!-- Bagian Artikel / Catatan Belajar -->
+    <main id="jurnal">
+        <h2>Catatan Belajar Terbaru</h2>
+
+        <article>
+            <h3>1. Memahami Struktur Dasar HTML5</h3>
+            <p><small>Dipublikasikan pada: 12 November 2026</small></p>
+            <p>Hari ini saya mempelajari bagaimana elemen semantik seperti <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, dan <code>&lt;article&gt;</code> membuat struktur kode web menjadi jauh lebih rapi dan mudah dibaca oleh mesin pencari.</p>
+        </article>
+
+        <article>
+            <h3>2. Pentingnya Merancang Database Sebelum Ngoding</h3>
+            <p><small>Dipublikasikan pada: 10 November 2026</small></p>
+            <p>Sebelum membangun fitur aplikasi, menentukan <strong>Primary Key</strong> dan relasi antartabel sangat membantu menghindari duplikasi data di kemudian hari.</p>
+        </article>
+    </main>
+
+    <hr>
+
+    <!-- Bagian Tabel Rak Bacaan -->
+    <section id="rak-buku">
+        <h2>Daftar Bacaan & Target</h2>
+        <table border="1" cellpadding="8" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Judul Buku / Materi</th>
+                    <th>Kategori</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Clean Code: A Handbook of Agile Software Craftsmanship</td>
+                    <td>Pemrograman</td>
+                    <td>Sedang Dibaca</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Filosofi Teras</td>
+                    <td>Pengembangan Diri</td>
+                    <td>Selesai</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Analisis & Perancangan Sistem Informasi</td>
+                    <td>Akademik</td>
+                    <td>Selesai</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Bagian Multimedia (Audio & Video) -->
+    <section id="media">
+        <h2>Suasana Belajar (Musik Latar)</h2>
+        <p>Putar audio instrumental berikut sambil membaca catatan di halaman ini:</p>
+        <audio controls>
+            <source src="musik-santai.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung pemutar audio.
+        </audio>
+    </section>
+
+    <hr>
+
+    <!-- Bagian Formulir Buku Tamu -->
+    <section id="buku-tamu">
+        <h2>Tinggalkan Jejak atau Rekomendasi Buku</h2>
+        <form action="#" method="POST">
+            <p>
+                <label for="pengunjung">Nama Kamu:</label><br>
+                <input type="text" id="pengunjung" name="pengunjung" placeholder="Tulis namamu..." required>
+            </p>
+
+            <p>
+                <label for="kategori-pesan">Topik Pesan:</label><br>
+                <select id="kategori-pesan" name="kategori-pesan">
+                    <option value="sapaan">Sekadar Menyapa</option>
+                    <option value="buku">Rekomendasi Buku</option>
+                    <option value="diskusi">Diskusi Koding</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="isi-pesan">Pesan / Rekomendasi:</label><br>
+                <textarea id="isi-pesan" name="isi-pesan" rows="4" cols="40" placeholder="Tulis pesan atau judul buku rekomendasi..."></textarea>
+            </p>
+
+            <button type="submit">Kirim ke Buku Tamu</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>Dibuat dengan penuh semangat menggunakan HTML murni &copy; 2026.</p>
+    </footer>
+
+</body>
+</html>
